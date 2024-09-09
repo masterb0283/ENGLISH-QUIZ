@@ -183,6 +183,7 @@ button:hover {
         width: 100%;
         padding: 15px;
         font-size: 14px;
+        margin-top: 10px;
     }
 
    .cancel-btn{

@@ -117,72 +117,102 @@
                 <p>15. What is the superlative form of 'bright'?</p>
                 <label><input type="radio" name="q15" value="A"> A. Brightest</label>
                 <label><input type="radio" name="q15" value="B"> B. Brighter</label>
-                <label><input type="radio" name="q15" value="C"> C. Brightly</label>
-                <label><input type="radio" name="q15" value="D"> D. Brightest</label>
+                <label><input type="radio" name="q15" value="C"> C. Bright</label>
+                <label><input type="radio" name="q15" value="D"> D. Brightly</label>
             </div>
             <div class="question">
-                <p>16. Which word is an adverb?</p>
-                <label><input type="radio" name="q16" value="A"> A. Quickly</label>
-                <label><input type="radio" name="q16" value="B"> B. Happiness</label>
-                <label><input type="radio" name="q16" value="C"> C. Book</label>
-                <label><input type="radio" name="q16" value="D"> D. Teacher</label>
+                <p>16. Choose the correct sentence.</p>
+                <label><input type="radio" name="q16" value="A"> A. The cat chased it's tail.</label>
+                <label><input type="radio" name="q16" value="B"> B. The cat chased its tail.</label>
+                <label><input type="radio" name="q16" value="C"> C. The cat chased its' tail.</label>
+                <label><input type="radio" name="q16" value="D"> D. The cat chased its tail's.</label>
             </div>
             <div class="question">
-                <p>17. What is the past form of 'write'?</p>
+                <p>17. What is the past participle of 'write'?</p>
                 <label><input type="radio" name="q17" value="A"> A. Wrote</label>
-                <label><input type="radio" name="q17" value="B"> B. Write</label>
-                <label><input type="radio" name="q17" value="C"> C. Written</label>
+                <label><input type="radio" name="q17" value="B"> B. Written</label>
+                <label><input type="radio" name="q17" value="C"> C. Writes</label>
                 <label><input type="radio" name="q17" value="D"> D. Writing</label>
             </div>
             <div class="question">
-                <p>18. Choose the correct form of 'to be' in past tense for 'I'.</p>
-                <label><input type="radio" name="q18" value="A"> A. Am</label>
-                <label><input type="radio" name="q18" value="B"> B. Is</label>
-                <label><input type="radio" name="q18" value="C"> C. Are</label>
-                <label><input type="radio" name="q18" value="D"> D. Was</label>
+                <p>18. What is the correct form of the verb in this sentence? "They ____ to the park every Sunday."</p>
+                <label><input type="radio" name="q18" value="A"> A. Goes</label>
+                <label><input type="radio" name="q18" value="B"> B. Go</label>
+                <label><input type="radio" name="q18" value="C"> C. Going</label>
+                <label><input type="radio" name="q18" value="D"> D. Gone</label>
             </div>
             <div class="question">
-                <p>19. What is the correct article for the word 'university'?</p>
-                <label><input type="radio" name="q19" value="A"> A. A</label>
-                <label><input type="radio" name="q19" value="B"> B. An</label>
-                <label><input type="radio" name="q19" value="C"> C. The</label>
-                <label><input type="radio" name="q19" value="D"> D. None</label>
+                <p>19. Which of the following is a conjunction?</p>
+                <label><input type="radio" name="q19" value="A"> A. Apple</label>
+                <label><input type="radio" name="q19" value="B"> B. And</label>
+                <label><input type="radio" name="q19" value="C"> C. Bright</label>
+                <label><input type="radio" name="q19" value="D"> D. Quickly</label>
             </div>
             <div class="question">
-                <p>20. Which sentence uses 'their' correctly?</p>
-                <label><input type="radio" name="q20" value="A"> A. Their going to the store.</label>
-                <label><input type="radio" name="q20" value="B"> B. They’re going to the store.</label>
-                <label><input type="radio" name="q20" value="C"> C. There going to the store.</label>
-                <label><input type="radio" name="q20" value="D"> D. Their going to the store.</label>
+                <p>20. Which word is an adverb?</p>
+                <label><input type="radio" name="q20" value="A"> A. Happy</label>
+                <label><input type="radio" name="q20" value="B"> B. Slowly</label>
+                <label><input type="radio" name="q20" value="C"> C. Cat</label>
+                <label><input type="radio" name="q20" value="D"> D. House</label>
             </div>
-            <!-- Add more questions here -->
-            
+
             <button type="button" onclick="submitQuiz()">Submit</button>
         </form>
 
+        <div id="scoreContainer" style="display:none;">
+            <h2>Your Score:</h2>
+            <p id="score"></p>
+        </div>
+
         <div class="join">
-            <a href="https://chat.whatsapp.com/KCnFSLBhRKd4gzuAJ0lmVi">JOIN OUR JAMB GROUP</a>
+            <a href="https://wa.me/message/4YLTUR33HC3LA1">MESSAGE ADMIN FOR MORE</a>
         </div>
     </div>
     <div>
         <h1>WHATSAPP ADMIN ON 09027420688</h1>
-        <h1>make sure you share with your friends so that you can participate in the other quiz</h1>
+        <h1>Make sure you share with your friends so that you can participate in the other quiz</h1>
     </div>
 
     <script>
         function submitQuiz() {
             const form = document.getElementById('quizForm');
             const formData = new FormData(form);
-            const answers = [];
+            const correctAnswers = {
+                q1: 'B',
+                q2: 'A',
+                q3: 'B',
+                q4: 'B',
+                q5: 'A',
+                q6: 'B',
+                q7: 'B',
+                q8: 'B',
+                q9: 'C',
+                q10: 'C',
+                q11: 'B',
+                q12: 'B',
+                q13: 'B',
+                q14: 'C',
+                q15: 'A',
+                q16: 'B',
+                q17: 'B',
+                q18: 'B',
+                q19: 'B',
+                q20: 'B'
+            };
 
+            let score = 0;
             formData.forEach((value, key) => {
-                answers.push(`${key}: ${value}`);
+                if (correctAnswers[key] === value) {
+                    score++;
+                }
             });
 
-            const message = encodeURIComponent(answers.join('\n'));
-            const whatsappLink = `https://wa.me/2349027420688?text=${message}`;
+            const totalQuestions = Object.keys(correctAnswers).length;
+            const scorePercentage = (score / totalQuestions) * 100;
 
-            window.location.href = whatsappLink;
+            // Display the score
+            document.getElementById('score').innerText = `You got ${score} out of ${totalQuestions} (${scorePercentage.toFixed(2)}%)`;
+            document.getElementById('scoreContainer').style.display = 'block';
         }
     </script>
 </body>

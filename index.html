@@ -17,6 +17,7 @@
         <button onclick="startQuiz()">START</button>
     </div>
 
+    
     <div class="urg">
         <a href="https://bit.ly/3APUpri">click here if you need jamb assistance</a> 
     </div>
@@ -25,6 +26,13 @@
         function startQuiz() {
             window.location.href = 'form.html';
         }
+
+        // Make the entire div.urg clickable
+        document.querySelectorAll('.urg').forEach(function(div) {
+            div.addEventListener('click', function() {
+                window.location.href = div.querySelector('a').href;
+            });
+        });
     </script>
 </body>
 </html>
